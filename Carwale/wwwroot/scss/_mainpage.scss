@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  background-color: #f33b1a;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  color: rgb(230, 230, 230);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  background-color: #d83316;
+}
+
+.products {
+  width: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+
+  .product-card {
+    width: 90%;
+    border: 1px solid rgb(199, 199, 199);
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    transition: box-shadow 0.5s ease-in-out;
+    .car {
+      img {
+        max-width: 250px;
+      }
+    }
+    .content {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 1.2rem;
+        color: rgb(51, 51, 51);
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        color: rgb(47, 47, 47);
+        font-weight: 600;
+      }
+    }
+  }
+  .product-card:hover {
+    box-shadow: 0 0 15px rgba(114, 114, 114, 0.507);
+  }
+}
+
+.extra-info {
+  font-size: 0.8rem;
+  color: grey;
+}

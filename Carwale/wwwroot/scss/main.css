@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+header {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+  border-radius: 1rem;
+}
+
+header .searchbar input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  border: 1px solid #bdbdbd;
+}
+
+header .navbar .brand {
+  width: 100px;
+}
+
+header .navbar ul {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #525252;
+  list-style-type: none;
+}
+
+header .navbar ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  border: none;
+  background-color: #f33b1a;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  color: #e6e6e6;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  background-color: #d83316;
+}
+
+.products {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.products .product-card {
+  width: 90%;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1rem;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.products .product-card .car img {
+  max-width: 250px;
+}
+
+.products .product-card .content {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products .product-card .content h1 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.products .product-card .content h2 {
+  font-size: 1.2rem;
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+.products .product-card:hover {
+  -webkit-box-shadow: 0 0 15px rgba(114, 114, 114, 0.507);
+          box-shadow: 0 0 15px rgba(114, 114, 114, 0.507);
+}
+
+.extra-info {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+form {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #193950df;
+  border-radius: 0.4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+form .form-group-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+form .form-group label {
+  display: block;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+form .form-group input:not([type="submit"]),
+form .form-group select {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #474747;
+  padding: 0.4rem;
+  background: white;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+}
+
+form .form-group span {
+  display: inline;
+  color: #ffe9ac;
+}
+
+form .form-group input:not([type="submit"]):focus,
+form .form-group select {
+  background: white;
+}
+
+.details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.details-container .main-image {
+  max-width: 80%;
+}
+
+.details-container .title {
+  font-size: 2rem;
+  color: #474747;
+  font-weight: 600;
+}
+
+.details-container table {
+  border-collapse: collapse;
+  margin: 2rem 0 5rem 0;
+  font-size: 1.5rem;
+}
+
+.details-container th {
+  color: #292828;
+}
+
+.details-container td,
+.details-container th {
+  border: 1px solid grey;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #525252;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+a:hover {
+  color: black;
+}
+
+.view-more-btn {
+  margin-top: 1rem;
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100px;
+}
+
+.view-more-btn:hover {
+  background-color: #3f3f3f;
+  color: white;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

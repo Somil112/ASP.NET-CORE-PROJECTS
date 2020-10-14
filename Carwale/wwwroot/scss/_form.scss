@@ -1,0 +1,51 @@
+form {
+  margin-top: 2rem;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #193950df;
+  border-radius: 0.4rem;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  .form-group-submit {
+    display: flex;
+    justify-content: center;
+  }
+  .form-group {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    label {
+      display: block;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    input:not([type="submit"]),
+    select {
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #474747;
+      padding: 0.4rem;
+      background: rgb(255, 255, 255);
+      transition: 0.2s all ease-in-out;
+      outline: none;
+      //   outline: 1px solid #e63312;
+    }
+    span {
+      display: inline;
+      color: rgb(255, 233, 172);
+    }
+    input:not([type="submit"]):focus,
+    select {
+      background: white;
+    }
+  }
+}

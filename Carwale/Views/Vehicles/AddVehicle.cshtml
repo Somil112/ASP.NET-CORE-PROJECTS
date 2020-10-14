@@ -1,0 +1,75 @@
+@using Carwale.Models
+@model VehicleModel
+
+@if (ViewBag.IsSuccess)
+{
+
+  <h1> Vehicle Added Successfully </h1>
+}
+<div class="container">
+
+  <form method="post" enctype="multipart/form-data">
+    @* <div class="form-group">
+      <label>Enter ID</label>
+      <input asp-for="Id" placeholder="Ex: 123"/>
+      </div> *@
+
+    <div class="form-group">
+      <label>Enter Model Name</label>
+      <input asp-for="modelName" placeholder="Ex: Hyundai Accent" />
+      <span asp-validation-for="modelName"></span>
+    </div>
+    <div class="form-group">
+      <label>Enter Brand</label>
+      <input asp-for="brand" placeholder="Ex: Hyundai" />
+      <span asp-validation-for="brand"></span>
+    </div>
+    <div class="form-group">
+      <label>Enter Price</label>
+      <input asp-for="price" placeholder="Ex: 23" />
+      <span asp-validation-for="price"></span>
+    </div>
+
+    <div class="form-group">
+      <label>Enter Mileage</label>
+      <input asp-for="mileage" placeholder="Ex: 10-20kmpl" />
+      <span asp-validation-for="mileage"></span>
+    </div>
+    <div class="form-group">
+      <label>Enter Engine Power</label>
+      <input asp-for="engine" placeholder="Ex: 900 to 1493 cc" />
+      <span asp-validation-for="engine"></span>
+    </div>
+    <div class="form-group">
+      <label>Enter Transmission</label>
+      <input asp-for="transmission" placeholder="Ex: Semi-Automatic, Automatic" />
+      <span asp-validation-for="transmission"></span>
+    </div>
+    <div class="form-group">
+      <label>Enter Fuel Type</label>
+      <select asp-for="fuelType" asp-items="new SelectList(ViewBag.fuelType)">
+        <option value="">Please Select Fuel Type</option>
+
+      </select>
+      <span asp-validation-for="fuelType"></span>
+    </div>
+    <div class="form-group">
+      <label>Enter Seating Capacity</label>
+      <input asp-for="capacity" placeholder="Ex: 5 Seater" />
+      <span asp-validation-for="capacity"></span>
+    </div>
+
+    <div class="form-group">
+      <label>Upload Vehicle Photo</label>
+      <input asp-for="vehiclePhoto" />
+      <span asp-validation-for="vehiclePhoto"></span>
+    </div>
+
+    <div class="form-group-submit">
+      <input class="btn" type="submit" value="submit" />
+
+    </div>
+
+
+  </form>
+</div>

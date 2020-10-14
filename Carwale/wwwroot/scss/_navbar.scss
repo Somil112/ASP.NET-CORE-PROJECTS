@@ -1,0 +1,35 @@
+header {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+  border-radius: 1rem;
+
+  .searchbar {
+    input {
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      border-radius: 0.2rem;
+      border: 1px solid rgb(189, 189, 189);
+    }
+  }
+  .navbar {
+    .brand {
+      width: 100px;
+    }
+    ul {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgb(82, 82, 82);
+      list-style-type: none;
+
+      li {
+        display: inline;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

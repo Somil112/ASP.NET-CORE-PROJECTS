@@ -1,0 +1,25 @@
+@model List<Carwale.Models.VehicleModel>;
+
+
+<div class="container">
+  <div class="products">
+    @foreach (var vehicle in Model)
+    {
+      <div class="product-card">
+        <div class="car">
+          <img src="~/@vehicle.vehicleURI" alt="" />
+        </div>
+        <div class="content">
+          <h1>@vehicle.modelName</h1>
+          <h2>
+            ₹@vehicle.price Lakhs
+            <span class="extra-info"> onwards, Avg Ex-Showroom Price</span>
+          </h2>
+          <a asp-action="getvehicle" asp-controller="vehicles" asp-route-id="@vehicle.Id" class="view-more-btn">View
+            More</a>
+        </div>
+
+      </div>
+    }
+  </div>
+</div>

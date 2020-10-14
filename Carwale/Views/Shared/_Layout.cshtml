@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] | Carwale</title>
+  <link rel="stylesheet" href="~/scss/main.css" />
+</head>
+
+<body>
+  <header>
+    <img width="200px" src="~/img/logo.svg" asp-append-version=true />
+
+    <div class="navbar">
+      <ul>
+        <li>
+          <a asp-controller="Vehicles" asp-action="GetAllVehicles">All Cars</a>
+        </li>
+        <li>
+          <a asp-controller="Vehicles" asp-action="AddVehicle">Add Vehicle</a>
+        </li>
+        <li>
+          Reviews and News
+        </li>
+      </ul>
+    </div>
+    <div class="searchbar">
+      <input type="text" placeholder="Search" />
+    </div>
+  </header>
+  @RenderBody()
+
+
+  <script src="~/scripts/jquery/jquery.min.js"></script>
+  <script src="~/scripts/jquery-validate/jquery.validate.min.js"></script>
+  <script src="~/scripts/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+
+</html>

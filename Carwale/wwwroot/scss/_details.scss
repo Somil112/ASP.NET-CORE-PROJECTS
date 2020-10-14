@@ -1,0 +1,31 @@
+.details-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .main-image {
+    max-width: 80%;
+  }
+  .title {
+    font-size: 2rem;
+    color: rgb(71, 71, 71);
+    font-weight: 600;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 2rem 0 5rem 0;
+    font-size: 1.5rem;
+  }
+
+  th {
+    color: rgb(41, 40, 40);
+  }
+  td,
+  th {
+    border: 1px solid grey;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}

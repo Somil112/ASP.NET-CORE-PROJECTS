@@ -1,0 +1,39 @@
+@{
+    Layout = "_Layout";
+}
+@model Carwale.Models.VehicleModel;
+
+<div class="container">
+
+    <div class="details-container">
+        <div class="main-image">
+            <img src="~/@Model.vehicleURI" alt="" />
+        </div>
+        <h1 class="title">
+            @Model.modelName
+        </h1>
+
+        <table>
+            <tr>
+
+                <th>Mileage</th>
+                <th>Fuel Type</th>
+                <th>Transmission</th>
+                <th>Capacity</th>
+                <th>Engine</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>@Model.mileage</td>
+                <td>@Model.fuelType</td>
+                <td>@Model.transmission</td>
+                <td>@Model.capacity</td>
+                <td>@Model.engine</td>
+                <td>@Model.price Lakhs Onwards</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</div>
